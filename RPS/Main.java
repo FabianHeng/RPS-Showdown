@@ -72,7 +72,7 @@ public class Main {
 
     public static void main(String[] args){
         
-        int rounds = 1000000; //Change rounds played here
+        int rounds = 1000000; // Change rounds played here
 
 		for (int i = 0; i < rounds; i++) {
             rounds(bot1, bot2);
@@ -81,7 +81,7 @@ public class Main {
         System.out.println("Bot 1 won " + bot1Points + " rounds.");
         System.out.println("Bot 2 won " + bot2Points + " rounds.");
         System.out.println("Draw: " + draw + " rounds.");
-        System.out.println("Rounds played: " + (bot1Points+bot2Points+draw));
+        System.out.println("Rounds played: " + (bot1Points + bot2Points + draw));
         System.out.println("Win Percentage: Bot 1 (" + bot1Points/(rounds/100) + "%)");
         System.out.println("Win Percentage: Bot 2 (" + bot2Points/(rounds/100) + "%)");
 	}
