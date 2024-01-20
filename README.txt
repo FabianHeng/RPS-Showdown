@@ -7,4 +7,4 @@ To pull:
 To push:
 1. git add .
 2. git commit -m "comment"
-3. git push
+3. git push origin main
