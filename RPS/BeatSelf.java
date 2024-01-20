@@ -23,6 +23,7 @@ public class BeatSelf extends Bot{
             }
             
         } else {
+            this.oldChoice = "rock";
             return "rock";
         }
     }
