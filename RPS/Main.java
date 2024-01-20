@@ -1,6 +1,6 @@
 public class Main {
     public static Bot bot1 = new Randy();
-    public static Bot bot2 = new RolyPoly();
+    public static Bot bot2 = new Permute();
     public static int draw = 0;
     public static int bot1Points = 0;
     public static int bot2Points = 0;
@@ -62,13 +62,17 @@ public class Main {
     }
 
     public static void main(String[] args){
-		for (int i = 0; i < 200; i++) {
+        
+        int rounds = 100000; //Change rounds played here
+
+		for (int i = 0; i < rounds; i++) {
             rounds(bot1, bot2);
             // System.out.println("round " + i + " bot1: " + bot1.choice() + " | bot2: " + bot2.choice());
         }
         System.out.println("Bot 1 won " + bot1Points + " rounds.");
         System.out.println("Bot 2 won " + bot2Points + " rounds.");
-        System.out.println("Both bots drawn " + draw + " rounds.");
-        System.out.println(bot2Points/2 + "%");
+        System.out.println("Draw: " + draw + " rounds.");
+        System.out.println("Rounds played: " + (bot1Points+bot2Points+draw));
+        System.out.println(bot2Points/(rounds/100) + "%");
 	}
 }
