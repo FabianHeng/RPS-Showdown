@@ -1,4 +1,4 @@
-public class Rock extends Bot{
+public class RockandStone extends Bot{
     String oldChoice;
 
     @Override
