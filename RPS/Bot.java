@@ -4,9 +4,11 @@ abstract public class Bot {
     String[] rps = {"rock", "paper", "scissors"};
 
     void update(String choice, int result) {}
+
     String random() {
         return rps[random.nextInt(rps.length)];
     }
+    
     String probableChoice(int r, int p, int s) {
         Random rand = new Random();
         int randomInt = rand.nextInt(100) + 1;
