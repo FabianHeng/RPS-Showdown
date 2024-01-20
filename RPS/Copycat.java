@@ -1,15 +1,15 @@
 public class Copycat extends Bot {
-    String prev;
+    String choice;
 
     @Override
-    void update(String choice) {
-        this.prev = prev;
+    void update(String choice, int result) {
+        this.choice = choice;
     }
 
     @Override
     String choice() {
-        if (prev != null) {
-            return prev;
+        if (choice != null) {
+            return choice;
         } else {
             return "scissors";
         }
