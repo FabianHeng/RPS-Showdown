@@ -1,6 +1,6 @@
 public class Main {
     public static Bot bot1 = new Randy();
-    public static Bot bot2 = new Permute();
+    public static Bot bot2 = new BeatPrev();
     public static int draw = 0;
     public static int bot1Points = 0;
     public static int bot2Points = 0;
@@ -63,7 +63,7 @@ public class Main {
 
     public static void main(String[] args){
         
-        int rounds = 100000; //Change rounds played here
+        int rounds = 1000000; //Change rounds played here
 
 		for (int i = 0; i < rounds; i++) {
             rounds(bot1, bot2);
