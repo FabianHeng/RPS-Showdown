@@ -1,5 +1,5 @@
 public class Main {
-    public static Bot bot1 = new BeatPrev();
+    public static Bot bot1 = new RockandStone();
     public static Bot bot2 = new JumpShip();
     public static int draw = 0;
     public static int bot1Points = 0;
