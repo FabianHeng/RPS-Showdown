@@ -1,5 +1,5 @@
 public class Copycat extends Bot {
-    String choice;
+    String choice = "";
 
     @Override
     void update(String choice, int result) {
@@ -8,10 +8,10 @@ public class Copycat extends Bot {
 
     @Override
     String choice() {
-        if (choice != null) {
-            return choice;
-        } else {
+        if (this.choice.isEmpty()) {
             return "scissors";
+        } else {
+            return this.choice;
         }
     }
 }

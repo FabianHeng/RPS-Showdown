@@ -1,19 +1,5 @@
-import java.util.Random;
-
 public class Human extends Bot{
     String c = probableChoice(36, 33, 31);
-
-    String probableChoice(int r, int p, int s) {
-        Random rand = new Random();
-        int randomInt = rand.nextInt(100) + 1;
-        if (randomInt < r+1) {
-            return "rock";
-        } else if (randomInt < r+p) {
-            return "paper";
-        } else {
-            return "scissors";
-        }
-    }
 
     @Override
     void update(String choice, int result) {
