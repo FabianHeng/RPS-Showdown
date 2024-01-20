@@ -1,6 +1,6 @@
 public class Main {
-    public static Bot bot1 = new JumpShip();
-    public static Bot bot2 = new RockandStone();
+    public static Bot bot1 = new Randy();
+    public static Bot bot2 = new JumpShip();
     public static int draw = 0;
     public static int bot1Points = 0;
     public static int bot2Points = 0;

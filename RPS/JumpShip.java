@@ -1,16 +1,14 @@
-import java.util.Random;
 public class JumpShip extends Bot {
-    Random random = new Random();
     String oppChoice = "";
     int result = -1;
-    String c = rps[random.nextInt(rps.length)];
+    String c = this.random();
 
     @Override
     void update(String choice, int result) {
         this.oppChoice = choice;
         this.result = result;
         if (result == 0) {
-            c = rps[random.nextInt(rps.length)];
+            c = this.random();
         } else if (result == 1) {
             switch (choice) {
                 case "scissors":
